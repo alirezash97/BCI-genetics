@@ -3,8 +3,10 @@ genes = int(input("please enter the number of genes : "))
 
 
 def pmx(parent1, parent2):
+    #if the number of genes are equal for both of parents
     if len(parent1) == len(parent2):
         genes = len(parent1)
+        #choose two random points for partitioning parents
         points_2 = sorted(random.sample(range(1, genes), 2))
         print("the selected points are :", points_2, "\n")
         child1 = [0 for i in range(genes)]
