@@ -3,19 +3,24 @@ genes = int(input("please enter the number of genes : "))
 
 
 def pmx(parent1, parent2):
+    
     # if the number of genes are equal for both of parents
     if len(parent1) == len(parent2):
         genes = len(parent1)
+        
         # choose two random points for partitioning parents
         points_2 = sorted(random.sample(range(1, genes), 2))
         print("the selected points are :", points_2, "\n")
+        
         # initialization 
         child1 = [0 for i in range(genes)]
         child2 = [0 for j in range(genes)]
+        
         # copy the alleles between two points from Parents to the Childs
         child1[points_2[0]:points_2[1]] = parent1[points_2[0]:points_2[1]]
         child2[points_2[0]:points_2[1]] = parent2[points_2[0]:points_2[1]]
-        # last empty gene for child1 = m + second point
+        
+        #right side of parent2
         m = 0
         for k in range(0, genes - points_2[1]):
             if parent2[points_2[1] + k] in child1[points_2[0]:points_2[1]]:
@@ -25,7 +30,8 @@ def pmx(parent1, parent2):
                 m += 1
             if points_2[1] + m == genes:
                 m = m - genes
-
+        
+        #left side of parent2
         for k in range(0, points_2[1]):
             if parent2[k] in child1[points_2[0]: points_2[1]]:
                 pass
@@ -35,6 +41,7 @@ def pmx(parent1, parent2):
             if points_2[1] + m == genes:
                 m = m - genes
 
+        #right side of parent1
         n = 0
         for k in range(0, genes - points_2[1]):
             if parent1[points_2[1] + k] in child2[points_2[0]: points_2[1]]:
@@ -44,7 +51,8 @@ def pmx(parent1, parent2):
                 n += 1
             if points_2[1] + n == genes:
                 n = n - genes
-
+        
+        #left side of parent1
         for k in range(0, points_2[1]):
             if parent1[k] in child2[points_2[0]: points_2[1]]:
                 pass
