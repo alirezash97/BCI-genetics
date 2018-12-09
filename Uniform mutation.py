@@ -4,6 +4,7 @@ import numpy as np
 def uniform(child):
 
     genes = len(child)
+    #random binary mask
     mask = np.random.choice([0, 1], size=(genes,))
     for i in range(0,genes):
         if mask[i] == 1 :
