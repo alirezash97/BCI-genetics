@@ -1,8 +1,7 @@
 import random
-n = int(input("please enter the number of points : "))
 
 
-def n_points(parent1, parent2):
+def n_points(parent1, parent2,n):
     if len(parent1) == len(parent2):
         genes = len(parent1)
         points_n = sorted(random.sample(range(1, genes), n))
