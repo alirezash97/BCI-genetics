@@ -9,4 +9,4 @@ def pms(child,p):
         else:
             pass
     return child
-print(pms([1,2,3,4],0.9))
+#print(pms([1,2,3,4],0.9))
