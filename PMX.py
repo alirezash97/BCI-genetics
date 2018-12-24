@@ -71,4 +71,4 @@ def pmx(parent1, parent2):
         print("genes aren't equal")
 
 
-pmx(random.sample(range(0, genes), genes), random.sample(range(0, genes), genes))
+#pmx(random.sample(range(0, genes), genes), random.sample(range(0, genes), genes))
