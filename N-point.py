@@ -46,4 +46,4 @@ def n_points(parent1, parent2):
         print("genes aren't equal")
 
 
-n_points(random.sample(range(0, genes), genes), random.sample(range(0, genes), genes))
+#n_points(random.sample(range(0, genes), genes), random.sample(range(0, genes), genes))
