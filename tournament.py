@@ -13,4 +13,4 @@ def tournament(population, n):
     return (max(my_tournament, key=lambda k: my_tournament[k]))
 
 
-print(tournament({1: [12, [1,0,0,1,0,1,0]], 2: [7, [1,1,1,0,1,0,1]],3: [4, [1,0,0,0,0,1,0]], 4: [3, [0,1,1,0,1,0,1]]},2))
+#print(tournament({1: [12, [1,0,0,1,0,1,0]], 2: [7, [1,1,1,0,1,0,1]],3: [4, [1,0,0,0,0,1,0]], 4: [3, [0,1,1,0,1,0,1]]},2))
