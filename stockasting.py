@@ -18,4 +18,4 @@ def sus(rates, individuals):
     return new_individuals
 
 
-print(sus([2, 3, 7, 6, 1, 5, 4], [1, 2, 3, 4, 5, 6, 7]))
+#print(sus([2, 3, 7, 6, 1, 5, 4], [1, 2, 3, 4, 5, 6, 7]))
