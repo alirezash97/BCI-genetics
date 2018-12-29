@@ -18,4 +18,4 @@ def uniform_c(parent1, parent2):
         return child1, child2
 
 
-print(uniform_c([0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0]))
+#print(uniform_c([0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1], [1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0]))
