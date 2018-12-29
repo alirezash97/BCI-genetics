@@ -14,4 +14,4 @@ def uniform(child):
     print("mask : ",mask)
     return child
 
-print(uniform([1,0,1,1,1,0,0,1,1,1,1,1,0]))
+#print(uniform([1,0,1,1,1,0,0,1,1,1,1,1,0]))
