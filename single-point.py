@@ -4,7 +4,7 @@ import random
 genes = int(input("please enter the number of genes : "))
 
 
-def n_points(parent1, parent2):
+def point(parent1, parent2):
     n = 1
     if len(parent1) == len(parent2):
         genes = len(parent1)
@@ -47,4 +47,4 @@ def n_points(parent1, parent2):
         print("genes aren't equal")
 
 
-#n_points(random.sample(range(0, genes), genes), random.sample(range(0, genes), genes))
+#point(random.sample(range(0, genes), genes), random.sample(range(0, genes), genes))
