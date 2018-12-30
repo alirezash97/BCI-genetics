@@ -10,4 +10,4 @@ def reverse(child):
     child[rand[0]:rand[1]] = rev[::-1]
     return child
 
-print(reverse([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+#print(reverse([1, 2, 3, 4, 5, 6, 7, 8, 9]))
